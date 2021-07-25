@@ -4,16 +4,22 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './styles.css';
 
 import Header from '../Header';
-import Climbers from '../Climbers';
-import News from '../News';
+import Content from '../Content/Content';
 import Footer from '../Footer';
 
 const App = () => {
   return (
       <div className="app">
-        <Header />
-        <Climbers />
-        <News />
+        <BrowserRouter>
+          <Switch>
+            <Route path="/" exact>
+              <Header />
+            </Route>
+            <Route path="content">
+              <Content />
+            </Route>
+          </Switch>
+        </BrowserRouter>
         <Footer />
       </div>
     );
