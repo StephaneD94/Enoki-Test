@@ -1,32 +1,26 @@
 .climbers {
-    position: absolute;
+    height: 100vh;
     width: 1172px;
-    height: 649px;
-    left: 134px;
-    top: 998px;
+    margin: auto;
 }
 
 .climbers-title {
-    position: absolute;
-    width: 171px;
-    height: 60px;
-    left: calc(50% - 171px/2 + 0.5px);
-    top: 998px;
     font-family: Montserrat;
+    width: 171px;
+    padding-top: 80px;
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
-    line-height: 60px;
+    line-height: 100px;
     text-align: center;
     color: #285D81;
+    margin: auto;
 }
 
 .climbers-text {
-    position: absolute;
-    left: 25.97%;
-    right: 25.97%;
-    top: 35.77%;
-    bottom: 61.26%;
+    width: 570px;
+    top: 90vh;
+    margin: auto;
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -37,114 +31,12 @@
 }
 
 .carousel {
-    position: absolute;
-    width: 993.69px;
-    height: 270.63px;
-    left: 224px;
-    top: 1198px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
 }
 
-/* CARD 1 */
-.card1 {
-    position: absolute;
-    width: 293.69px;
-    height: 270.63px;
-    left: 224px;
-    top: 1198px;
+.carousel-arrow {
+    margin-top: 8%;
 }
 
-.card1-description {
-    position: absolute;
-    width: 226px;
-    height: 67.66px;
-    left: 254px;
-    top: 1400.97px;
-}
-
-.card1-imgContainer {
-    position: absolute;
-    width: 293.69px;
-    height: 227.52px;
-    left: 224px;
-    top: 1198px;
-}
-
-.card1-img {
-    position: absolute;
-    width: 389.25px;
-    height: 256.57px;
-    left: 176.55px;
-    top: 1183.06px;
-    background: url(/src/assets/5eb56b7401e9c\ 1.jpg);
-    background-repeat: no-repeat;
-}
-
-/* CARD 2 */
-.card2 {
-    position: absolute;
-    width: 293.69px;
-    height: 270.63px;
-    left: 573.69px;
-    top: 1198px;
-}
-
-.card2-description {
-    position: absolute;
-    width: 226px;
-    height: 67.66px;
-    left: 603.69px;
-    top: 1400.97px;
-}
-
-.card2-imgContainer {
-    position: absolute;
-    width: 293.69px;
-    height: 227.52px;
-    left: 573.69px;
-    top: 1198px;
-}
-
-.card2-img {
-    position: absolute;
-    width: 470px;
-    height: 291px;
-    left: 485.69px;
-    top: 1166px;
-    background: url(/src/assets/image\ 2.jpg);
-    background-repeat: no-repeat;
-}
-
-/* CARD 3 */
-.card3 {
-    position: absolute;
-    width: 293.69px;
-    height: 270.63px;
-    left: 923.39px;
-    top: 1198px;
-}
-
-.card3-description {
-    position: absolute;
-    width: 226px;
-    height: 67.66px;
-    left: 953.39px;
-    top: 1400.97px;
-}
-
-.card3-imgContainer {
-    position: absolute;
-    width: 293.69px;
-    height: 227.52px;
-    left: 923.39px;
-    top: 1198px;
-}
-
-.card3-img {
-    position: absolute;
-    width: 368px;
-    height: 243px;
-    left: 886.39px;
-    top: 1190px;
-    background: url(/src/assets/5eb56b7401e9c\ 2.jpg);
-    background-repeat: no-repeat;
-}
