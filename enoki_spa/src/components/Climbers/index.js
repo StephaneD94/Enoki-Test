@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import './styles.css';
 
 import Card from './Card';
-import image1 from '../../../assets/5eb56b7401e9c 1.jpg';
-import image2 from '../../../assets/image 2.jpg';
-import image3 from '../../../assets/5eb56b7401e9c 2.jpg';
+import image1 from '../../assets/5eb56b7401e9c 1.jpg';
+import image2 from '../../assets/image 2.jpg';
+import image3 from '../../assets/5eb56b7401e9c 2.jpg';
 
 const Climbers = ({ reference }) => {
   const [index, setIndex] = useState(0);
@@ -33,9 +33,9 @@ const Climbers = ({ reference }) => {
       year= "2021"
     />,
     <Card
-      key="Tommy"
+      key="patacha"
       picture={image3}
-      title= "Tommy Caldwell"
+      title= "Patacha"
       city= "Paris"
       year= "2021"
     />,
@@ -51,8 +51,11 @@ const handleClickRight = () => {
   setIndex(modifiedIndex % cardList.length)
 }
 
+// Detect mobile browser and set numbers of pictures to display
+const MAX_CLIMBERS_DISPLAY = window.outerWidth <= 375 ? 1 : 3;
+
 const renderCarousel = (cardList, index) => {
-  const finalArray = [...cardList.slice(index, cardList.length),...cardList.slice(0,index)].slice(0, 3);
+  const finalArray = [...cardList.slice(index, cardList.length),...cardList.slice(0,index)].slice(0,MAX_CLIMBERS_DISPLAY);
   console.log(finalArray);
  return (
     <>

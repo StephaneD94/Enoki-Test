@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles.css';
 
-import underImage from '../../../assets/Image externe.png';
+import underImage from '../../assets/Image externe.png';
 
 const News = () => {
     return (

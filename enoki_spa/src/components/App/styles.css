@@ -1,4 +1,89 @@
+/* Mobile config */
+@media only screen 
+    and (device-width : 375px)
+    and (device-height: 667px)
+    and (-webkit-device-pixel-ratio : 2)
+{
+    .app {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .header {
+        width: 100%;
+        height: 100%;
+        background-image: url("../../assets/climber-on-el-cap-main-page-web\ 2\ \(1\).png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+    }
+
+    .header-text {
+        position: absolute;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        color: #FFFFFF;
+        top: 40%;
+        width: 100%;
+        height: 20%;
+    }
+
+    .header-arrow {
+        position: absolute;
+        width: 22px;
+        height: 44px;
+        top: 90vh;
+        left: 50vw;
+        cursor: pointer;
+    }
+
+    .header-arrow {
+        position: absolute;
+        width: 22px;
+        height: 44px;
+        top: 90vh;
+        left: 50vw;
+        cursor: pointer;
+    }
+}
+ /* Desktop config */
+@media screen and (min-width: 1024px) and (max-width: 2560px) {
 .app {
     width: 100vw;
     height: 100vh;
+}    
+.header {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../assets/climber-on-el-cap-main-page-web\ 2\ \(2\).png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-text {
+    position: absolute;
+    width: 100%;
+    top: 48vh;
+    margin: auto;
+    color: #FFF;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.header-arrow {
+    position: absolute;
+    /* width: 22px; */
+    /* height: 14vh; */
+    top: 90vh;
+    left: 50vw;
+    cursor: pointer;
+}
 }
