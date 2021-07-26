@@ -4,8 +4,8 @@ import './styles.css';
 
 const Footer = () => {
     return (
-      <div>
-        Footer component
+      <div className="footer-container">
+        <p className="footer-text">Enoki Studio - Test Technique</p>
       </div>
     );
   }

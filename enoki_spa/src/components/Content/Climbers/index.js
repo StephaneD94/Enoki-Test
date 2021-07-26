@@ -11,24 +11,34 @@ const Climbers = ({ reference }) => {
   const [index, setIndex] = useState(0);
 
   const cardList = [
-  <Card
-    picture={image1}
-    title= "Alex Honnold"
-    city= "Paris"
-    year= "2021"
-  />, 
-  <Card
-    picture={image2}
-    title= "Chris Sharma"
-    city= "Paris"
-    year= "2021"
-  />,
-  <Card
-    picture={image3}
-    title= "Tommy Caldwell"
-    city= "Paris"
-    year= "2021"
-  />
+    <Card
+      key="Alex"
+      picture={image1}
+      title= "Alex Honnold"
+      city= "Paris"
+      year= "2021"
+    />, 
+    <Card
+      key="Chris"
+      picture={image2}
+      title= "Chris Sharma"
+      city= "Paris"
+      year= "2021"
+    />,
+    <Card
+      key="Tommy"
+      picture={image3}
+      title= "Tommy Caldwell"
+      city= "Paris"
+      year= "2021"
+    />,
+    <Card
+      key="Tommy"
+      picture={image3}
+      title= "Tommy Caldwell"
+      city= "Paris"
+      year= "2021"
+    />,
 ]
 
 const handleClickLeft = () => {
@@ -42,7 +52,7 @@ const handleClickRight = () => {
 }
 
 const renderCarousel = (cardList, index) => {
-  const finalArray = [...cardList.slice(index, cardList.length),...cardList.slice(0,index)];
+  const finalArray = [...cardList.slice(index, cardList.length),...cardList.slice(0,index)].slice(0, 3);
   console.log(finalArray);
  return (
     <>
@@ -63,6 +73,7 @@ const renderCarousel = (cardList, index) => {
             <path d="M3 47L25 25L3 3" stroke="#2580BC" stroke-width="8"/>
           </svg>
         </div>
+        <button type="button" className="climbers-button">More climbers</button>
      </div>
     );
   }

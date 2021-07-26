@@ -1,14 +1,14 @@
-import { props } from 'bluebird';
 import {React, useRef} from 'react';
 
 import Climbers from '../Content/Climbers';
 import News from '../Content/News';
+import Footer from '../Content/Footer';
 
 import './styles.css';
 import climberImage from '../../assets/climber-on-el-cap-main-page-web.png';
 
 
-const Content = (props) => {
+const Content = () => {
   const climbersRef = useRef(null);
 
   const handleClickForScroll = () => {
@@ -40,7 +40,9 @@ const Content = (props) => {
       </div>
         <Climbers 
           reference={climbersRef}
-        /> 
+        />
+        <News />
+        <Footer /> 
       </>
     );
   }
