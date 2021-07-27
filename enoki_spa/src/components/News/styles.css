@@ -184,6 +184,11 @@
     text-transform: uppercase;
 }
 
+.news-button:hover {
+    background-color: #285D81;
+    color: white;
+}
+
 .news-name {
     position: absolute;
     font-family: Montserrat;
@@ -205,8 +210,8 @@
     font-size: 14px;
     line-height: 25px;
     color: #8F8F8F;
-    width: 45%;
-    top: 97%;
+    width: 55%;
+    top: 94%;
     left: 10%;
 }
  }

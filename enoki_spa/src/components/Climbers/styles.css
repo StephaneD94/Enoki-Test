@@ -61,7 +61,7 @@
 .climbers-button {
     width: 60vw;
     height: 60px;
-    margin: 22vh 20vw;
+    margin: 21vh 20vw;
     background: #9AF2D3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
@@ -106,12 +106,17 @@
     display: flex;
     flex-wrap:nowrap;
     justify-content: space-evenly;
-    margin-top: 30px;
+    margin-top: 8%;
 }
 
 .carousel-arrow {
     margin-top: 8%;
     cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.carousel-arrow:hover {
+    transform: scale(1.5);
 }
 
 .climbers-button {
@@ -124,6 +129,8 @@
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.climbers-button:hover {
+    background-color: #285D81;
+    color: white;
 }
-
-
+}
