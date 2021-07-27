@@ -34,19 +34,8 @@
 
     .header-arrow {
         position: absolute;
-        width: 22px;
-        height: 44px;
         top: 90vh;
-        left: 50vw;
-        cursor: pointer;
-    }
-
-    .header-arrow {
-        position: absolute;
-        width: 22px;
-        height: 44px;
-        top: 90vh;
-        left: 50vw;
+        left: 45vw;
         cursor: pointer;
     }
 }

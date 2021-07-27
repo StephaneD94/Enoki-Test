@@ -1,3 +1,4 @@
+/* Mobile config */
 @media only screen 
     and (device-width : 375px)
     and (device-height: 667px)
@@ -48,7 +49,7 @@
 .climbers-button {
     width: 60vw;
     height: 60px;
-    margin: auto;
+    margin: 22vh 20vw;
     background: #9AF2D3;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
 }

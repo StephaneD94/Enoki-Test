@@ -1,4 +1,31 @@
+@media only screen 
+and (device-width : 375px)
+and (device-height: 667px)
+and (-webkit-device-pixel-ratio : 2)
+{
 .footer-container {
+    width: 85vw;
+    height: 10vh;
+    margin: 6vh auto 8vh auto;
+    padding-bottom: 2%;
+    border-top: 4px solid #2580BC;
+}
+
+.footer-text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 30px;
+    text-align: center;
+    color: #285D81;
+}
+}
+
+/* Desktop config */
+@media screen and (min-width: 1024px) and (max-width: 2560px)
+ {
+ .footer-container {
     width: 990px;
     height: 76px;
     margin: auto;
@@ -14,4 +41,5 @@
     line-height: 60px;
     text-align: center;
     color: #285D81;
+}
 }

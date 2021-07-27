@@ -26,11 +26,11 @@
         background-color: #FFF;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         text-align: center;
-        margin-bottom: 30vh;
+        /* margin-bottom: 30vh; */
     }
     
     .card_infos {
-        margin: 0;
+        margin: 0 0 20px 0;
     }
     
     .card_infos-1 {
@@ -38,7 +38,7 @@
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
-        line-height: 40px;
+        line-height: 20px;
         text-align: center;
         color: #285D81;
     }
@@ -48,9 +48,10 @@
         font-style: normal;
         font-weight: normal;
         font-size: 13px;
-        line-height: 1px;
+        line-height: 0px;
         text-align: center;
         color: #285D81;
+        margin-bottom: 20%;
     }
 }
 

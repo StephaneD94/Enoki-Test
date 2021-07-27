@@ -1,3 +1,114 @@
+/* Mobile config */
+@media only screen 
+    and (device-width : 375px)
+    and (device-height: 667px)
+    and (-webkit-device-pixel-ratio : 2)
+{
+    .news-container {
+        width: 100vw;
+        height: 800px;
+        background: #2580BC;
+    }
+    
+    .news-title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 100px;
+        text-align: center;
+        color: #F8FAFF;
+        margin-bottom: 0;
+    }
+    
+    .news-description {
+        font-family: Museo Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 30px;
+        text-align: center;
+        color: #F8FAFF;
+        width: 80vw;
+        margin: auto;
+    }
+    
+    .news-article {
+        width: 80vw;
+        height: 50vh;
+        margin: 10vh auto 13vh auto;
+        box-sizing: border-box;
+        position: relative
+    }
+    
+    .news_image {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .news_over {
+        position: absolute;
+        width: 92.5%;
+        left: 4%;
+        top: -5%;
+        height: 120%;
+        opacity: 1;
+        border-left: 20px solid white;
+        border-right: 20px solid white;
+        border-top: 70px solid white;
+        border-bottom: 80px solid white;
+        box-sizing: border-box;
+    }
+    
+    .news-button {
+        position: absolute;
+        width: 50vw;
+        height: 10vh;
+        left: 25vw;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        color: #285D81;
+        text-transform: uppercase;
+    }
+    
+    .news-name {
+        position: absolute;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        line-height: 30px;
+        color: #2580BC;
+        margin: auto;
+        text-align : center;
+        width: 80vw;
+    }
+    
+    .news-content {
+        position: absolute;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 11px;
+        line-height: 25px;
+        color: #8F8F8F;
+        height: 5vh;
+        top: 46vh;
+        left: 8vw;
+        width: 70vw;
+        margin: auto;
+    }
+}
+
+ /* Desktop config */
+ @media screen and (min-width: 1024px) and (max-width: 2560px)
+ {
 .news-container {
     width: 100vw;
     height: 1300px;
@@ -97,3 +208,6 @@
     top: 97%;
     left: 10%;
 }
+ }
+
+
