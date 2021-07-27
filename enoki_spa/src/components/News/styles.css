@@ -111,9 +111,9 @@
  {
 .news-container {
     width: 100vw;
-    height: 1300px;
+    height: 136vh;
     background: #2580BC;
-    margin-bottom: 7%;
+    margin-bottom: 6%;
 }
 
 .news-title {
@@ -138,7 +138,7 @@
     text-align: center;
     color: #F8FAFF;
     width: 50%;
-    margin: 0 auto 8% auto ;
+    margin: 0 auto 6% auto ;
 }
 
 .news-article {
@@ -169,8 +169,8 @@
 }
 
 .news-button {
-    width: 20%;
-    margin: 12% 40%;
+    width: 15%;
+    margin: 12% 43%;
     height: 60px;
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
