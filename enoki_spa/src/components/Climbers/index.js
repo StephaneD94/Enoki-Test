@@ -3,13 +3,16 @@ import React, { useState } from 'react';
 import './styles.css';
 
 import Card from './Card';
-import image1 from '../../assets/5eb56b7401e9c 1.jpg';
-import image2 from '../../assets/image 2.jpg';
-import image3 from '../../assets/5eb56b7401e9c 2.jpg';
+import image1 from '../../assets/Image masque.png';
+import image2 from '../../assets/Image masque (1).png';
+import image3 from '../../assets/Image masque (2).png';
 
 const Climbers = ({ reference }) => {
+
+  /* Local state to handle card array indexes */
   const [index, setIndex] = useState(0);
 
+/* Card data */
   const cardList = [
     <Card
       key="Alex"
@@ -32,15 +35,9 @@ const Climbers = ({ reference }) => {
       city= "Paris"
       year= "2021"
     />,
-    <Card
-      key="patacha"
-      picture={image3}
-      title= "Patacha"
-      city= "Paris"
-      year= "2021"
-    />,
 ]
 
+/* Handling the click on left and right arrows for the carousel */ 
 const handleClickLeft = () => {
   const modifiedIndex = index-1;
   setIndex(modifiedIndex % cardList.length)
@@ -54,6 +51,7 @@ const handleClickRight = () => {
 // Detect mobile browser and set numbers of pictures to display
 const MAX_CLIMBERS_DISPLAY = window.outerWidth <= 375 ? 1 : 3;
 
+// Show the pictures in the carousel by their index
 const renderCarousel = (cardList, index) => {
   const finalArray = [...cardList.slice(index, cardList.length),...cardList.slice(0,index)].slice(0,MAX_CLIMBERS_DISPLAY);
   console.log(finalArray);

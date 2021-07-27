@@ -34,9 +34,9 @@
     }
     
     .news-article {
-        width: 80vw;
+        width: 90vw;
         height: 50vh;
-        margin: 10vh auto 13vh auto;
+        margin: 10vh auto 12vh auto;
         box-sizing: border-box;
         position: relative
     }
@@ -142,8 +142,8 @@
 }
 
 .news-article {
-    width: 50vw;
-    height: 70vh;
+    width: 40vw;
+    height: 60vh;
     margin: auto;
     box-sizing: border-box;
     position: relative
@@ -163,7 +163,7 @@
     opacity: 1;
     border-left: 40px solid white;
     border-right: 40px solid white;
-    border-top: 120px solid white;
+    border-top: 100px solid white;
     border-bottom: 120px solid white;
     box-sizing: border-box;
 }
@@ -192,7 +192,8 @@
     font-size: 20px;
     line-height: 30px;
     color: #2580BC;
-    width: 50vw;
+    width: 30vw;
+    top: -2%;
     left: 10%;
 }
 

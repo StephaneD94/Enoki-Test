@@ -10,6 +10,7 @@ const App = () => {
 
 const climbersRef = useRef(null);
 
+/* Scroll animation from header part to the rest*/
 const handleClickForScroll = () => {
     climbersRef.current.scrollIntoView({behavior: 'smooth', block: 'start'});   
   };
@@ -17,7 +18,6 @@ const handleClickForScroll = () => {
   return (
       <div className="app">
         <div className="header">
-          {/* <img className="header-img" src={climberImage}/> */}
           <p className="header-text">Rock climbing</p>
           <svg href="climbers" className="header-arrow" width="58" height="39" viewBox="0 0 58 39" fill="none" xmlns="http://www.w3.org/2000/svg" onClick={handleClickForScroll}>
               <g filter="url(#filter0_d)">
