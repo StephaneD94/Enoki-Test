@@ -66,11 +66,11 @@ const renderCarousel = (cardList, index) => {
         <p className="climbers-title">Climbers</p>
         <p className="climbers-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex</p>
         <div className="carousel">
-          <svg className="carousel-arrow" onClick={handleClickLeft} width="31" height="50" viewBox="0 0 31 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="carousel-arrow carousel-arrow--left" onClick={handleClickLeft} width="31" height="50" viewBox="0 0 31 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M28 3L6 25L28 47" stroke="#2580BC" stroke-width="8"/>
           </svg>
             {renderCarousel(cardList, index)}
-          <svg className="carousel-arrow" onClick={handleClickRight} width="31" height="50" viewBox="0 0 31 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg className="carousel-arrow carousel-arrow--right" onClick={handleClickRight} width="31" height="50" viewBox="0 0 31 50" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 47L25 25L3 3" stroke="#2580BC" stroke-width="8"/>
           </svg>
         </div>

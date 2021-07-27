@@ -35,13 +35,25 @@
     height: 20vh;
 }
 
-.carousel-arrow {
-    display: none;
+.carousel-arrow--left {
+    position: absolute;
+    top: 170vh;
+    left: 7vw;
+    z-index: 5;
+    width: 0.5%;
+    height: 20%;
+}
+
+.carousel-arrow--right {
+    position: absolute;
+    top: 170vh;
+    left: 90vw;
+    width: 0.5%;
+    height: 20%;
 }
 
 .carousel {
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-around;
     margin-top: 30px;
 }
